@@ -19,6 +19,10 @@ project_entries:
     url: https://upload.ampis.org/
     desc: A simple file sharing platform.
 
+  - title: Bibliogram
+    url: https://bibliogram.ampis.org/
+    desc: An alternative Instagram front-end.
+
 #   - title: Project
 #     url: 
 #     desc: 
