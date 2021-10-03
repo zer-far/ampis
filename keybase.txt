@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/humid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ampis.org
+  * I am humid (https://keybase.io/humid) on keybase.
+  * I have a public key ASCLIOvNGgAeHrki4IusEp99QigS_DrTyBwUf2pg1SnSUQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208b20ebcd1a001e1eb922e08bac129f7d422812fc3ad3c81c147f6a60d529d2510a",
+      "host": "keybase.io",
+      "kid": "01208b20ebcd1a001e1eb922e08bac129f7d422812fc3ad3c81c147f6a60d529d2510a",
+      "uid": "9656ef3ddd36b9516237fcf405d11019",
+      "username": "humid"
+    },
+    "merkle_root": {
+      "ctime": 1633296774,
+      "hash": "60ab803c7534140149f6032efda951062566b872cab96d2f0482bcd3f1a5cf1698ee4570546b75fa8dedd0ece02a3ccfd5d5d2be1e94a0204a1e32bf5ed7ef6b",
+      "hash_meta": "4ebc6f10249d4db2da4903df84787cc5b1954d81af336039ba41bc842d4a270a",
+      "seqno": 20902579
+    },
+    "service": {
+      "entropy": "8THEHXlM8HYU46nsHuVOBgWO",
+      "hostname": "ampis.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.1"
+  },
+  "ctime": 1633296875,
+  "expire_in": 504576000,
+  "prev": "4634a0fc9a6acd698341364d823d13d9b7d2a6419289c585ca2670105c95279e",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgiyDrzRoAHh65IuCLrBKffUIoEvw608gcFH9qYNUp0lEKp3BheWxvYWTESpcCBcQgRjSg/JpqzWmDQTZNgj0T2bfSpkGSicWFyiZwEFyVJ57EIJDYO3s6Fjka+bINV2hQLDuKFpva/cRSBfMFBK6Yw7aSAgHCo3NpZ8RAoo/yYRp68DWM6dx3Lo1rU+D+mvhuLHuv0bjujAbuaSDhf3BeDHJCrv9Q8iLI4GyP/J4VJrjcs61X/NcUe90hCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIwFkTPJAFEcrS0i2rgUTachpJKcogqmpYjlMB2bgkiXo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/humid
+
+==================================================================
