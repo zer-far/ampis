@@ -1,6 +1,9 @@
 navbar_entries:
-  - title: about
-    url: about
+  - title: contact
+    url: contact
+    
+  - title: donate
+    url: donate
 
 project_entries:
   - title: Allium
