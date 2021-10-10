@@ -7,23 +7,23 @@ navbar_entries:
          
 project_entries:
   - title: Allium
-    url: [https://tor.ampis.org/](http://ouo.io/qs/1yWujy0J?s=tor.ampis.org)
+    url: http://ouo.io/qs/1yWujy0J?s=tor.ampis.org
     desc: Tor relay metrics and statistics.
 
   - title: Lstu
-    url: https://url.ampis.org/
+    url: http://ouo.io/qs/1yWujy0J?s=url.ampis.org
     desc: URL shortener.
     
   - title: PrivateBin
-    url: https://bin.ampis.org/
+    url: http://ouo.io/qs/1yWujy0J?s=bin.ampis.org
     desc: A minimalist pastebin where the server has zero knowledge of pasted data.
 
   - title: Jirafeau
-    url: https://upload.ampis.org/
+    url: http://ouo.io/qs/1yWujy0J?s=upload.ampis.org
     desc: A simple file sharing platform.
 
   - title: Bibliogram
-    url: https://bibliogram.ampis.org/
+    url: http://ouo.io/qs/1yWujy0J?s=bibliogram.ampis.org
     desc: An alternative Instagram front-end.
 
 #   - title: Project
