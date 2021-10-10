@@ -50,10 +50,10 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: Status
+  - title: status
     url: https://status.ampis.org
 
-  - title: GitHub
+  - title: github
     url: https://github.com/zer-far
 
 misc_entries:
