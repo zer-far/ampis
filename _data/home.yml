@@ -25,6 +25,10 @@ project_entries:
   - title: Bibliogram
     url: http://ouo.io/qs/1yWujy0J?s=bibliogram.ampis.org
     desc: An alternative Instagram front-end.
+    
+  - title: RetroArch
+    url: http://ouo.io/qs/1yWujy0J?s=retroarch.ampis.org
+    desc: Emulate videogames systems and play videogames through your web browser.
 
 #   - title: Project
 #     url: 
