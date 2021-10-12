@@ -29,6 +29,10 @@ project_entries:
   - title: RetroArch
     url: http://ouo.io/qs/1yWujy0J?s=retroarch.ampis.org
     desc: Emulate videogames systems and play videogames through your web browser.
+    
+  - title: SPFToolbox
+    url: http://ouo.io/qs/1yWujy0J?s=spftoolbox.ampis.org
+    desc: Look up DNS records such as SPF, MX, Whois.
 
 #   - title: Project
 #     url: 
