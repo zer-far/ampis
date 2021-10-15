@@ -2,4 +2,4 @@
 layout: post
 ---
 
-I registered ampis.org today on [Cosmotown](https://cosmotown.com).
+I registered ampis.org using [Cosmotown](https://cosmotown.com).
