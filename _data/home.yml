@@ -4,7 +4,10 @@ navbar_entries:
     
   - title: donate
     url: donate
-         
+    
+  - title: posts
+    url: posts
+
 project_entries:
   - title: Allium
     url: http://ouo.io/qs/1yWujy0J?s=tor.ampis.org
