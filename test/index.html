@@ -7,17 +7,16 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
+{% if post.categories contains 'test' %}
+{% if site.posts.size > 0 %}
+  <ul>
     {% for post in site.posts %}
-    {% if post.categories contains 'test' %}
-
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+      <li class="post-list-item">
+        <span class="home-date">
+          {{ post.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
-</div>
+{% endif %}
