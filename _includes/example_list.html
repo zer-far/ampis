@@ -1,7 +1,7 @@
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.categories contains 'test' %}
+    {% if post.categories contains 'example' %}
       <li class="post-list-item">
         <span class="home-date">
           {{ post.date | date: site.theme_config.date_format }}»
