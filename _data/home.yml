@@ -4,9 +4,6 @@ navbar_entries:
     
   - title: donate
     url: donate
-    
-  - title: posts
-    url: posts
 
 project_entries:
   - title: Allium
