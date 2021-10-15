@@ -9,7 +9,7 @@ layout: default
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.categories contains 'test' %}
+    {% if post.categories contains 'overthewire' %}
       <li class="post-list-item">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
