@@ -5,11 +5,11 @@ layout: default
 <header>
   <h1>{{ site.title }}</h1>
 </header>
-<h2>Test</h2>
+<h2>Bandit</h2>
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.categories contains 'overthewire' %}
+    {% if post.categories contains 'bandit' %}
       <li class="post-list-item">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
