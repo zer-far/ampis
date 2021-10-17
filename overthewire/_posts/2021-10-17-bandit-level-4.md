@@ -1,4 +1,4 @@
-```yaml
+```
 layout: post
 categories: bandit
 ```
