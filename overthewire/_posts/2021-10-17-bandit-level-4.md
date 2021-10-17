@@ -1,7 +1,7 @@
-```
+---
 layout: post
 categories: bandit
-```
+---
 
 [https://overthewire.org/wargames/bandit/bandit4.html](https://overthewire.org/wargames/bandit/bandit4.html)
 
