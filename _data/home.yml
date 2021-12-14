@@ -13,30 +13,6 @@ project_entries:
     url: http://ouo.io/qs/1yWujy0J?s=tor.ampis.org
     desc: Tor relay metrics and statistics.
 
-  - title: Lstu
-    url: http://ouo.io/qs/1yWujy0J?s=url.ampis.org
-    desc: URL shortener.
-    
-  - title: PrivateBin
-    url: http://ouo.io/qs/1yWujy0J?s=bin.ampis.org
-    desc: A minimalist pastebin where the server has zero knowledge of pasted data.
-
-  - title: Jirafeau
-    url: http://ouo.io/qs/1yWujy0J?s=upload.ampis.org
-    desc: A simple file sharing platform.
-
-  - title: Bibliogram
-    url: http://ouo.io/qs/1yWujy0J?s=bibliogram.ampis.org
-    desc: An alternative Instagram front-end.
-    
-  - title: RetroArch
-    url: http://ouo.io/qs/1yWujy0J?s=retroarch.ampis.org
-    desc: Emulate videogames systems and play videogames through your web browser.
-    
-  - title: SPFToolbox
-    url: http://ouo.io/qs/1yWujy0J?s=spftoolbox.ampis.org
-    desc: Look up DNS records such as SPF, MX, Whois.
-
 #   - title: Project
 #     url: 
 #     desc: 
