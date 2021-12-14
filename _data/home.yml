@@ -12,6 +12,10 @@ project_entries:
   - title: Allium
     url: http://ouo.io/qs/1yWujy0J?s=tor.ampis.org
     desc: Tor relay metrics and statistics.
+    
+  - title: Chat
+    url: http://ouo.io/qs/1yWujy0J?s=chat.ampis.org
+    desc: Realtime chat app with rooms.
 
 #   - title: Project
 #     url: 
