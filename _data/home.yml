@@ -16,6 +16,10 @@ project_entries:
   - title: Chat
     url: http://ouo.io/qs/1yWujy0J?s=chat.ampis.org
     desc: Realtime chat app with rooms.
+    
+  - title: Calendar
+    url: http://ouo.io/qs/1yWujy0J?s=calendar.ampis.org
+    desc: View a calendar of every year.
 
 #   - title: Project
 #     url: 
