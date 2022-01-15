@@ -21,8 +21,8 @@ project_entries:
     url: https://calendar.ampis.org
     desc: View a calendar of every year.
     
-  - title: Paste 
-    url: https://paste .ampis.org
+  - title: Pastebin
+    url: https://pastebin.ampis.org
     desc: Share text.
 
 #   - title: Project
