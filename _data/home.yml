@@ -51,6 +51,8 @@ old_project_entries:
 footer_entries:
   - title: github
     url: https://github.com/zer-far
+  - title: status
+    url: https://status.ampis.org
 
 misc_entries:
   - title: this is an example vertical list
