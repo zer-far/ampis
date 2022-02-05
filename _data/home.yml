@@ -10,7 +10,7 @@ navbar_entries:
 
 project_entries:
   - title: Allium
-    url: https://tor.ampis.org
+    url: https://allium.ampis.org
     desc: Tor relay metrics and statistics.
     
   - title: Chat
