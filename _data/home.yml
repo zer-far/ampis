@@ -23,11 +23,15 @@ project_entries:
     
   - title: Pastebin
     url: https://pastebin.ampis.org
-    desc: Share text.
+    desc: Text sharing.
 
   - title: Translate
     url: https://translate.ampis.org
     desc: Alternative front-end for Google Translate.
+
+  - title: Times
+    url: https://times.ampis.org
+    desc: Times around the world.
 
 #   - title: Project
 #     url: 
