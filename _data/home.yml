@@ -12,15 +12,15 @@ project_entries:
   - title: Allium
     url: https://allium.ampis.org
     desc: Tor relay metrics and statistics.
-    
+
   - title: Chat
     url: https://chat.ampis.org
     desc: Realtime chat app with rooms.
-    
+
   - title: Calendar
     url: https://calendar.ampis.org
     desc: View a calendar of every year.
-    
+
   - title: Pastebin
     url: https://pastebin.ampis.org
     desc: Text sharing.
@@ -32,6 +32,10 @@ project_entries:
   - title: Times
     url: https://times.ampis.org
     desc: Times around the world.
+
+  - title: Thgtoa
+    url: https://thgtoa.ampis.org
+    desc: The Hitchhiker’s Guide to Online Anonymity by AnonymousPlanet.
 
 #   - title: Project
 #     url: 
