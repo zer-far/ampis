@@ -9,6 +9,10 @@ navbar_entries:
     url: blog
 
 project_entries:
+  - title: Minecraft
+    url: http://mc.ampis.org:25565
+    desc: Minecraft server.
+
   - title: Allium
     url: https://allium.ampis.org
     desc: Tor relay metrics and statistics.
