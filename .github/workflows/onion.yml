@@ -15,17 +15,17 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
 
   deploy_job:
     runs-on: ubuntu-latest
     name: deploy
     needs: build
     steps:
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
       - name: Checkout
         uses: actions/checkout@v2
-      - name: deploy file
+      - name: Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: '${{ secrets.SERVER_USERNAME }}'
@@ -34,4 +34,3 @@ jobs:
           local_path: '/srv/jekyll/_site/*'
           remote_path: './public_html'
           args: '-o ConnectTimeout=5'
-
