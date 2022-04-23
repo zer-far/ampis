@@ -24,7 +24,6 @@ jobs:
       env: 
         ftp_location: ${{ secrets.FTP_LOCATION }}
         ftp_username: ${{ secrets.FTP_USERNAME }}
-        ftp_password: ${{ secrets.FTP_PASSWORD }} 
         ftp_path: ${{ secrets.FTP_PATH }} 
       run: |
         lftp sftp://$ftp_username@$ftp_location -c 'set sftp:connect-program "ssh -a -x -i private.key" -e "set cmd:at-exit; set net:timeout 10; set net:max-retries 3; mirror --verbose --no-perms -R _prod_site/ $ftp_path; bye"
