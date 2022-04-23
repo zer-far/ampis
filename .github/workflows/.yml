@@ -1,0 +1,36 @@
+name: 
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+  upload:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: deploy file to server
+          uses: wlixcc/SFTP-Deploy-Action@v1.0
+          with:
+            username: '${{ secrets.SERVER_USERNAME }}'
+            server: '${{ secrets.SERVER_IP }}'
+            ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}'
+            local_path: '${{ secrets.LOCAL_PATH }}'
+            remote_path: '${{ secrets.SERVER_PATH }}'
+            args: '-o ConnectTimeout=5'
