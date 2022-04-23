@@ -1,5 +1,4 @@
 name: 'Pages Jekyll'
-description: 'A simple GitHub Action for producing Jekyll build artifacts compatible with GitHub Pages'
 inputs:
   source:
     description: 'Directory where the source files reside.'
