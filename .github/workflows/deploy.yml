@@ -1,29 +1,24 @@
 name: Deploy onion site
-on:
-  push:
-    branches: [ main ]
+on: [push]
+
 jobs:
-  build:
+  deploy_job:
     runs-on: ubuntu-latest
+    name: Build and deploy site
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --destination _prod_site/ --config _config.yml,_config_prod.yml"
-    - name: Setup Environment.
-      env:
-        known_hosts: ${{ secrets.KNOWN_HOSTS }} 
-      run: |
-        sudo apt-get install -y lftp
-        mkdir -p ~/.ssh/
-        echo $known_hosts >> ~/.ssh/known_hosts
-        echo ${{ secrets.PRIVATE_KEY }} > private.key
-    - name: Upload site to server
-      env: 
-        ftp_location: ${{ secrets.FTP_LOCATION }}
-        ftp_username: ${{ secrets.FTP_USERNAME }}
-        ftp_path: ${{ secrets.FTP_PATH }} 
-      run: |
-        lftp sftp://$ftp_username@$ftp_location -c 'set sftp:connect-program "ssh -a -x -i private.key" -e "set cmd:at-exit; set net:timeout 10; set net:max-retries 3; mirror --verbose --no-perms -R _prod_site/ $ftp_path; bye"
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --destination _prod_site/ --config _config.yml"
+      - name: Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: '${{ secrets.SERVER_USERNAME }}'
+          server: '${{ secrets.SERVER_IP }}'
+          ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}'
+          local_path: '${{ secrets.LOCAL_PATH }}'
+          remote_path: '${{ secrets.SERVER_PATH }}'
+          args: '-o ConnectTimeout=5'
