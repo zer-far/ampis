@@ -33,32 +33,26 @@ project_entries:
     url: https://times.ampis.org
     desc: Times around the world.
 
-  - title: Thgtoa (mirror)
-    url: https://thgtoa.ampis.org
-    desc: The Hitchhiker’s Guide to Online Anonymity by AnonymousPlanet.
-
 #   - title: Project
 #     url: 
 #     desc: 
 #     highlight: WIP
 
 old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
+  - title: Thgtoa (anonymousplanet-ng.org)
+    url: https://thgtoa.ampis.org
+    desc: The Hitchhiker’s Guide to Online Anonymity by AnonymousPlanet.
+    highlight: MIRROR
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
+  - title: Ampis mirror 1
+    url: http://jjszg33lphdacey7ane6duo3ivxik5f3rh463tfasg5vg3rviw4dz4id.onion/
+    desc: ampis.org mirror
+    highlight: MIRROR
 
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
+  - title: Ampis mirror 2
+    url: http://ampisbdvwunumi3msrd35rpxg5rnouku6stj4jg4plid25aoajeozmyd.onion/
+    desc: ampis.org mirror
+    highlight: MIRROR
 
 footer_entries:
   - title: github
