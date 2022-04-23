@@ -21,12 +21,12 @@ jobs:
     name: deploy
     needs: build
     steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Checkout
         uses: actions/checkout@v2
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
-      - name: Tmate
-        uses: mxschmitt/action-tmate@v3
         with:
           username: '${{ secrets.SERVER_USERNAME }}'
           server: '${{ secrets.SERVER_IP }}'
