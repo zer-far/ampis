@@ -18,19 +18,19 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
-  upload:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2.3.4
-        - name: Upload Files
-          id: upload
-          uses: Creepios/sftp-action@v1.0.3
-          with:
-            host: '${{ secrets.SERVER_IP }}'
-            port: 22
-            username: '${{ secrets.SERVER_USERNAME }}'
-            privateKey: '${{ secrets.SSH_PRIVATE_KEY }}'
-            localPath: './_site'
-            remotePath: './public_html'
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: '${{ secrets.SERVER_USERNAME }}'
+          server: '${{ secrets.SERVER_IP }}'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+          local_path: './_site/*'
+          remote_path: './public_html'
+          args: '-o ConnectTimeout=5'
+
