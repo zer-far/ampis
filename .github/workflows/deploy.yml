@@ -1,6 +1,5 @@
 name: Deploy onion site
 on: [push]
-
 jobs:
   deploy_job:
     runs-on: ubuntu-latest
