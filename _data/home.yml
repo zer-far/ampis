@@ -44,15 +44,15 @@ old_project_entries:
     desc: The Hitchhiker’s Guide to Online Anonymity by AnonymousPlanet (anonymousplanet-ng.org).
     highlight: MIRROR
 
-  - title: Ampis - Tor
+  - title: Ampis 2
     url: http://jjszg33lphdacey7ane6duo3ivxik5f3rh463tfasg5vg3rviw4dz4id.onion/
-    desc: ampis.org Tor mirror 1
-    highlight: MIRROR
+    desc: ampis.org
+    highlight: MIRROR, TOR
 
-  - title: Ampis - Tor
+  - title: Ampis 3
     url: http://ampisbdvwunumi3msrd35rpxg5rnouku6stj4jg4plid25aoajeozmyd.onion/
-    desc: ampis.org Tor mirror 2
-    highlight: MIRROR
+    desc: ampis.org
+    highlight: MIRROR, TOR
 
 footer_entries:
   - title: github
